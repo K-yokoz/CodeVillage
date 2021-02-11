@@ -1,0 +1,44 @@
+#menu {
+    padding-top: 250px;
+    padding-bottom: 80px;
+    
+}
+
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    @include sp {
+        flex-direction: column;
+    }
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 22%;
+    @include sp {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    img {
+        width: 100%;
+    }
+    h3 {
+        letter-spacing: 0.05em;
+        padding-top: 35px;
+        font-size: 3rem;
+    }
+    p {
+        text-align: left;
+        padding: 35px 10px 20px;
+    }
+    .price {
+       text-align: right;
+    }
+}
+
+

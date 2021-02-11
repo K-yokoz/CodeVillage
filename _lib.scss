@@ -1,0 +1,62 @@
+/*　変数　*/
+$space: 0.3em;
+
+// @mixin
+
+@mixin pc {
+    @media screen and (min-width: 960px){
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (max-width: 959px){
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 600px){
+        @content;
+    }
+}
+
+// 全体のスタイル
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;  /* 10px */
+}  
+
+body {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+
+#concept, #menu, footer {
+    padding: 0 8%;
+}
+
+
+
+.title {
+    letter-spacing: 0.4em;
+    font-size: 18px;
+    color: #707070;
+    padding-bottom: 1rem;
+    &:after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid;
+        width: 5em;
+        margin-left: 0.5em;
+        margin-bottom: 0.3em;
+    }
+}
+
+.hair {
+    letter-spacing: $space;
+    font-size: 3.8rem;
+    font-family: "游明朝";
+}
+

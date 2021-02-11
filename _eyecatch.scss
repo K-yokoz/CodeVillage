@@ -1,0 +1,37 @@
+#eyecatch {
+    background-image: url(../img/component.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 800px;
+    position: relative;
+}      
+
+.eyecatch__wrap {
+    position: absolute;
+    top: 50%;
+    left: 25%;   
+    transform: translate(-50%, -50%); 
+    height: 20%; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    p {
+        letter-spacing: $space;
+        font-size: 3.8rem;       
+        font-family: "游明朝";
+    }
+    @include tab {
+        top: 40%;
+        left: 50%;
+        height: 10%;
+        h3, p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h3 {
+            order: 1;
+        }
+    }
+}
+
+

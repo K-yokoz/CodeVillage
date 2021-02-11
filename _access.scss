@@ -1,0 +1,58 @@
+#access {
+    background-color: #A193861F;
+    padding: 250px 0 70px;
+    .title{
+        padding-left: 8%;
+        padding-bottom: 50px;
+    }
+    @include sp {
+        padding: 50px 0;
+    }
+    
+}
+
+.access-content{
+    display: flex;
+    justify-content: space-between;
+    height: 396px;
+    align-items: center;
+    @include sp {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .access-text {
+        background-color: #D0C5BA;
+        height: 396px;
+        width: 40%;
+        letter-spacing: 0.1em;
+        display: inline-block;
+        text-align: left;
+        padding-left: 8%;
+        color: #fff;
+        @include sp {
+            order: 1;
+            width: 100%;
+        }
+        
+        h3 {
+            margin-top: 30px;
+            color: #00000038;
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+        p {
+            margin-top: 30px;
+            line-height: 2.5em;
+        }
+
+    }
+}
+
+iframe{
+    width: 60%;
+    height: 396px;
+    @include sp {
+        width: 100%;
+    }
+}
