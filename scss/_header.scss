@@ -4,8 +4,10 @@ header {
     align-items: center;
     width: 100%;
     padding: 6%;
-    position: absolute;
-    z-index: 10;
+    @include pc {
+        position: absolute;
+        z-index: 10;
+    }
     @include tab {
         justify-content: space-between;
     }
@@ -13,9 +15,12 @@ header {
 
 
 .header-logo {
-    margin-right: 20px;
-    font-size: 3.8rem;
-    letter-spacing: 0.15em;
+    white-space: nowrap;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    @include sp {
+        font-size: 2.2em;
+    }
 }
 
 .pc-navmenu {
@@ -27,7 +32,11 @@ header {
         display: flex;
         justify-content: space-between;
         color: #707070;
-         font-size: 18px;
+        font-size: 1.8rem;
+        li {
+            margin-left: 20px;
+            letter-spacing: 0.15em;
+        }
         li a:hover {
             color: #000;
             text-decoration: underline;
@@ -38,7 +47,7 @@ header {
 .ham {
     display: none;
     @include tab {
-        width: 25px;
+        width: 23px;
         height: 16px;
         display: flex;
         flex-direction: column;
@@ -47,7 +56,7 @@ header {
             display: inline-block;
             width: 100%;
             height: 2px;
-            background-color: #000;
+            background-color: #3B4043;
         }
     }
 }

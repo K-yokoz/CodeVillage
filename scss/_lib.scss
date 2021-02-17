@@ -1,5 +1,5 @@
 /*　変数　*/
-$space: 0.3em;
+$space: 0.2em;
 
 // @mixin
 
@@ -28,20 +28,25 @@ html {
 
 body {
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 1.6rem;
+    letter-spacing: 0.4em;
+
 }
 
 
 
 #concept, #menu, footer {
     padding: 0 8%;
-}
+    line-height: 1.6em;
+    @include sp {
+        padding: 0 6%;
+    }
+  }
 
 
 
 .title {
-    letter-spacing: 0.4em;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #707070;
     padding-bottom: 1rem;
     &:after {
@@ -55,8 +60,9 @@ body {
 }
 
 .hair {
+    white-space: nowrap;
     letter-spacing: $space;
     font-size: 3.8rem;
-    font-family: "游明朝";
+    font-family: '游明朝';
 }
 
