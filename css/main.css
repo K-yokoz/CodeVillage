@@ -260,7 +260,7 @@ header {
 }
 @media screen and (max-width: 959px) {
   .eyecatch__wrap {
-    color: white;
+    color: #fff;
     top: 45%;
     left: 50%;
     height: 15%;
