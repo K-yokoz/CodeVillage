@@ -4,29 +4,35 @@
     background-repeat: no-repeat;
     height: 800px;
     position: relative;
+    left: 0;
     @include tab {
+        background-position: middle;
+    }
+    @include sp {
         background-position: top left;
     }
  
 }      
 
 .eyecatch__wrap {
+    color: #000;
     position: absolute;
-    top: 50%;
-    left: 25%;   
-    transform: translate(-50%, -50%); 
+    top: 40%;
+    left: 100px;   
     height: 20%; 
     display: flex;
     justify-content: space-between;
     text-align: center;
     flex-direction: column;
     p {
-        font-size: 6rem;       
+        font-size: 6.5rem;       
         font-family: 'Garamond';
         font-style: italic;
+        white-space: nowrap;
     }
     
-    @include tab {
+    @include sp {
+        transform: translate(-50%, -50%); 
         color: #fff;
         top: 45%;
         left: 50%;
@@ -35,7 +41,6 @@
             font-size: 2.5rem
         }
         p {
-            white-space: nowrap;
             font-size: 5rem;
             order: -1;
         }

@@ -2,9 +2,9 @@
 
 
 hr {
-    margin-top: 120px;
+    margin-top: 160px;
     margin-bottom: 20px;
-    color: #70707036;
+    color: #7070704D;
     border-style: solid 1px;
     @include sp {
         margin: 80px 0 0;
@@ -12,11 +12,12 @@ hr {
 }
 
 #footer {
-    height: 100px;
+    height: 160px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     @include sp {
+        height: 100px;
         margin: 80px 0;
         flex-direction:column;
     }
@@ -31,7 +32,7 @@ hr {
     h2 {
         margin-right: 20px;
         color: #7070704D;
-        font-size: 32px;
+        font-size: 3.2rem;
     }
     .fab {
         font-size: 2rem;
