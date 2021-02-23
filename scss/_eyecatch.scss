@@ -6,10 +6,6 @@
     height: 630px;
     background-size: contain;
     position: relative;
-    left: 0;
-    
-    @include tab {
-    }
     @include sp {
         height: 500px;
         background-position: top left;
@@ -23,11 +19,12 @@
     position: absolute;
     top: 40%;
     left: 7%;   
-    height: 20%; 
+    height: 22%; 
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
+    
     p {
         font-size: 6rem;       
         font-family: 'Garamond';

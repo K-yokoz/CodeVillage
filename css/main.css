@@ -153,7 +153,7 @@ body {
 .hair {
   white-space: nowrap;
   letter-spacing: 0.2em;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   font-family: '游明朝';
 }
 
@@ -238,7 +238,6 @@ header {
   height: 630px;
   background-size: contain;
   position: relative;
-  left: 0;
 }
 @media screen and (max-width: 600px) {
   #eyecatch {
@@ -253,7 +252,7 @@ header {
   position: absolute;
   top: 40%;
   left: 7%;
-  height: 20%;
+  height: 22%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -283,15 +282,15 @@ header {
 }
 
 #concept {
-  background: linear-gradient(180deg, #A193861F 0%, #A193861F 50%, #A1938689 50%, #A1938689 100%);
-  height: 1000px;
-  padding: 250px 8% 100px;
+  background: linear-gradient(180deg, #A193861F 0%, #A193861F 350px, #A1938689 350px, #A1938689 100%);
+  height: 850px;
+  padding: 200px 8% 50px;
 }
 @media screen and (max-width: 600px) {
   #concept {
     background: linear-gradient(180deg, #A193861F 0%, #A193861F 25%, #A1938689 25%, #A1938689 100%);
     height: 750px;
-    padding: 60px 5% 60px;
+    padding: 60px 5%;
   }
   #concept .title {
     padding-bottom: 50px;
@@ -342,14 +341,14 @@ header {
   }
 }
 .c-content-wrap {
-  padding: 8% 5%;
+  padding: 5%;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .c-content-wrap .c-text {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 @media screen and (max-width: 959px) {
   .c-content-wrap {
@@ -393,7 +392,6 @@ header {
 
 .menu-content {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   width: 26%;
 }
@@ -429,7 +427,7 @@ header {
 
 #access {
   background-color: #A193861F;
-  padding: 250px 0 70px;
+  padding: 230px 0 55px;
 }
 #access .title {
   padding-left: 8%;
@@ -475,6 +473,7 @@ header {
   }
 }
 .access-content .access-text h3 {
+  margin-top: 60px;
   color: #00000038;
   font-size: 2.4rem;
   font-weight: bold;
@@ -485,8 +484,8 @@ header {
   }
 }
 .access-content .access-text p {
-  margin-top: 30px;
-  line-height: 2.5em;
+  margin-top: 20px;
+  line-height: 2em;
 }
 @media screen and (max-width: 600px) {
   .access-content .access-text p {

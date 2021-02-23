@@ -1,12 +1,12 @@
 #concept {
     
-    background: linear-gradient(180deg, #A193861F 0%, #A193861F 50%,#A1938689 50%, #A1938689 100%);
-    height: 1000px;
-    padding: 250px 8% 100px;  
+    background: linear-gradient(180deg, #A193861F 0%, #A193861F 350px,#A1938689 350px, #A1938689 100%);
+    height: 850px;
+    padding: 200px 8% 50px;  
     @include sp {
         background: linear-gradient(180deg, #A193861F 0%, #A193861F 25%, #A1938689 25%, #A1938689 100%);
         height: 750px;
-        padding: 60px 5% 60px;
+        padding: 60px 5%;
         .title {
             padding-bottom: 50px;
         }
@@ -56,13 +56,13 @@
 
 .c-content-wrap {
     
-    padding: 8% 5%;
+    padding: 5%;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .c-text {
-        margin-left: 10%;
+        margin-left: 5%;
     }
     @include tab {
         flex-direction: column;  
