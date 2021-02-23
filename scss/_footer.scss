@@ -7,7 +7,7 @@ hr {
     color: #7070704D;
     border-style: solid 1px;
     @include sp {
-        margin: 80px 0 0;
+        margin: 60px 0 0;
     }
 }
 
@@ -17,8 +17,8 @@ hr {
     justify-content: space-between;
     align-items: center;
     @include sp {
-        height: 100px;
-        margin: 80px 0;
+        height: 110px;
+        margin: 50px 0 20px;
         flex-direction:column;
     }
 }
@@ -40,8 +40,9 @@ hr {
     @include sp {
         width: 100%;
         order: 1;
-        .h2 {
+        h2 {
             font-size: 1.8rem;
+            letter-spacing: unset;
         }
     }
 }
@@ -60,6 +61,6 @@ button {
         width: 50%;
         display: flex;
         justify-content: center;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 }

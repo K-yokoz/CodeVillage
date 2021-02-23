@@ -1,61 +1,61 @@
 #concept {
+    
     background: linear-gradient(180deg, #A193861F 0%, #A193861F 50%,#A1938689 50%, #A1938689 100%);
     height: 1000px;
     padding: 250px 8% 100px;  
     @include sp {
         background: linear-gradient(180deg, #A193861F 0%, #A193861F 25%, #A1938689 25%, #A1938689 100%);
-        height: 850px;
-        padding: 60px 6% 60px;
+        height: 750px;
+        padding: 60px 5% 60px;
+        .title {
+            padding-bottom: 50px;
+        }
     }
 }
 
 
 .c-image {
     width: 100%; 
+    height: auto;
     display: flex;
     justify-content: space-between;
- 
-    .concept-img1 {
-        padding-right: 10px;
+    @include sp {
+        height: 60vw;
     }
     img {
         width: 100%;
+        object-fit: cover;
     }
-    
-    
 }
-
-@include sp {
-    #concept .title {
-        padding-bottom: 50px;
-    }
-
-    .c-image{
-        height: 40%;
-    }
-    .concept-img1 {
+ 
+.concept-img1 {
+    padding-right: 10px;
+    @include sp {
         padding-right: 0;
         width: 49.5%;
         overflow: hidden;
         img {
-            width: auto;
-            height: 100%;
-            transform: translate(-220px, 0);
-        }
-    }
-
-    .concept-img2 {
-        width: 49.5%;
-        overflow: hidden;
-        img {
             height: 100%;
             width: auto;
-            transform: translate(-60px, 0);
+            transform: translate(-50%, 0);
         }
     }
 }
 
+@include sp {
+        .concept-img2 {
+            width: 49.5%;
+            overflow: hidden;
+            img {
+                height: 100%;
+                width: auto;
+                transform: translate(-20%, 0);
+            }
+        }
+}
+
 .c-content-wrap {
+    
     padding: 8% 5%;
     color: #fff;
     display: flex;
@@ -67,9 +67,9 @@
     @include tab {
         flex-direction: column;  
         .hair {
-            font-size: 3rem;
+            font-size: 1.8rem;
             text-align: center;
-            padding: 30px 0 50px;
+            padding: 30px 0;
         }  
         .c-text {
             margin-left: 0;
